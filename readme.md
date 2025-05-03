@@ -55,6 +55,13 @@ mlflow.models.predict(
 mlflow models build-docker -m "runs:/<RUN_ID>/model" -n "mlflow_yolo"
 ```
 
+или готовый образ
+
+```bash
+docker pull gametwix/mlflow_yolo
+```
+
+
 ### 5. Запуск контейнера
 ```bash
 docker run -p 5000:8080 -it --rm mlflow_yolo
